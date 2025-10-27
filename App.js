@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import HomeScreen from './src/screens/CadastroScreen';
+import HomeScreen from './src/screens/HomeScreen';
 import ListaScreen from './src/screens/ListaScreen';
 import CadastroScreen from './src/screens/CadastroScreen';
 import DetalhesScreen from './src/screens/DetalesScreen'; 
