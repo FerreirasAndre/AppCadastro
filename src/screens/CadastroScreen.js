@@ -48,14 +48,14 @@ export default function CadastroScreen() {
         <Text>Nome do Produto</Text>
         <TextInput
         value={nome}
-        onChange={setNome}
+        onChangeText={setNome}
         placeholder="Digite o nome do produto"
         />
 
         <Text>Descrição</Text>
         <TextInput
         value={descricao}
-        onChange={setDescricao}
+        onChangeText={setDescricao}
         placeholder="Detalhes do Produto" 
         multiline
         />
@@ -63,7 +63,7 @@ export default function CadastroScreen() {
         <Text>Preço</Text>
         <TextInput
         value={preco}
-        onChange={setPreco}
+        onChangeText={setPreco}
         placeholder="Preço do produto"
         />
 
