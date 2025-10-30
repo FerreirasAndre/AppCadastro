@@ -44,24 +44,27 @@ export default function CadastroScreen() {
   };
     return (
 
-      <View >
-        <Text>Nome do Produto</Text>
+      <View  style={styles.container}>
+        <Text style={styles.styleText}>Nome do Produto</Text>
         <TextInput
+        style={styles.input}
         value={nome}
         onChangeText={setNome}
         placeholder="Digite o nome do produto"
         />
 
-        <Text>Descrição</Text>
+        <Text style={styles.styleText}>Descrição</Text>
         <TextInput
+        style={styles.input}
         value={descricao}
         onChangeText={setDescricao}
         placeholder="Detalhes do Produto" 
         multiline
         />
 
-        <Text>Preço</Text>
+        <Text style={styles.styleText}>Preço</Text>
         <TextInput
+        style={styles.input}
         value={preco}
         onChangeText={setPreco}
         placeholder="Preço do produto"
@@ -72,3 +75,23 @@ export default function CadastroScreen() {
       </View>
     );
   }
+
+  const styles = StyleSheet.create({
+    container:{
+      padding: 20,
+      flex: 1,
+      backgroundColor: "#f0f0f0"
+    },
+    styleText:{
+      marginBottom: 5,
+      marginTop: 15
+    },
+    input:{
+      height:40,
+      borderColor: "gray",
+      borderWidth: 1,
+      paddingHorizontal:10,
+      marginBottom:10,
+      borderRadius: 5
+    },
+  });
