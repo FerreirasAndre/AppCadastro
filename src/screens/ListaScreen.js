@@ -5,7 +5,7 @@ import { useNavigation } from "@react-navigation/native";
 
 export default function ListaScreen() {
   const {listaDeProdutos} = useContext(ProdutosContext)
-  const navigation =useNavigation
+  const navigation =useNavigation();
 
   const renderItem =({item}) =>(
     <TouchableOpacity
