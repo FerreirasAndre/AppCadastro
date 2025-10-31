@@ -1,13 +1,12 @@
 import { Alert, Button, Platform, StyleSheet, Text, TextInput, View } from "react-native";
-import React, {useState, useContext } from "react";
-import { ProdutosContext, ProdutosProvider } from "../components/ProdutosContext";
+import React, {useState} from "react";
+
 
 export default function CadastroScreen() {
     const [nome, setNome] = useState("");
     const [preco, setPreco] = useState("");
     const [descricao, setDescricao] = useState("");
 
-    const {adicionarProduto} = useContext(ProdutosContext);
 
     const handlerCadastro = () =>{
       if (nome==="" || preco==="" || descricao===""){
